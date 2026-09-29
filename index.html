@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DecodeMe – Confidentialité</title>
+<style>
+  :root { --fond:#ffffff; --texte:#1c1c1e; --doux:#555; --lien:#1a5fb4; }
+  @media (prefers-color-scheme: dark) { :root { --fond:#141414; --texte:#eee; --doux:#aaa; --lien:#78aeed; } }
+  body { background:var(--fond); color:var(--texte); font:17px/1.55 system-ui, sans-serif;
+         max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:1.6em; margin-bottom:4px; } h2 { font-size:1.15em; margin-top:28px; }
+  .date { color:var(--doux); margin-top:0; } a { color:var(--lien); overflow-wrap:anywhere; }
+</style>
+</head>
+<body>
+<h1>Politique de confidentialité de DecodeMe</h1>
+<p class="date">Dernière mise à jour : 28 septembre 2026</p>
+<p>DecodeMe t'aide à comprendre un courrier administratif (lettre officielle, facture, contrat, impôts…). Cette page explique, simplement, ce qui arrive à tes données.</p>
+
+<h2>En bref</h2>
+<ul>
+<li>Nous n'avons <strong>aucun serveur</strong> : nous ne recevons, ne stockons et ne vendons aucun de tes documents.</li>
+<li>Une <strong>photo</strong> de document est lue <strong>sur ton téléphone</strong> et n'est <strong>jamais envoyée</strong>.</li>
+<li>Si ton téléphone le permet, le document est aussi <strong>expliqué sur ton téléphone</strong>, sans internet.</li>
+<li>Sinon, le texte est envoyé à <strong>Google Gemini</strong> pour être expliqué, après avoir retiré les informations personnelles que l'appli sait reconnaître.</li>
+<li>L'appli est gratuite grâce à la <strong>publicité</strong> (Google AdMob), avec ton consentement.</li>
+</ul>
+
+<h2>1. Le document que tu donnes à l'appli</h2>
+<p>Tu peux coller un texte ou prendre une photo.</p>
+<ul>
+<li><strong>Photo</strong> : le texte est lu sur le téléphone (Google ML Kit, qui fonctionne sans internet). La photo est effacée dès que son texte est lu. Elle ne quitte jamais le téléphone.</li>
+<li><strong>Explication sur le téléphone</strong> : si ton téléphone est assez puissant et que tu as téléchargé le moteur (environ 2 Go, depuis Hugging Face), le document est expliqué sur le téléphone. Rien n'est envoyé.</li>
+<li><strong>Explication en ligne</strong> : sinon, le texte est envoyé à Google Gemini, seulement quand tu appuies sur « Expliquer ». Avant l'envoi, l'appli retire du texte : IBAN, adresse e-mail, numéro de téléphone, numéro de sécurité sociale ou fiscal. <strong>Attention</strong> : un nom ou une adresse écrits en toutes lettres peuvent passer. Google traite ce texte selon ses propres règles : <a href="https://ai.google.dev/gemini-api/terms">ai.google.dev/gemini-api/terms</a></li>
+<li>Chaque fiche indique où elle a été faite (« Lu sur ton téléphone » ou « Lu en ligne »).</li>
+<li>Le dernier texte saisi est gardé <strong>chiffré sur le téléphone</strong> pour ne pas le perdre. Le bouton « Effacer » ou « Effacer le texte en cours » (Réglages) le supprime.</li>
+</ul>
+
+<h2>2. Publicité</h2>
+<p>L'appli affiche des publicités Google AdMob. Au premier lancement, dans l'Union européenne, un formulaire te demande ton accord (publicité personnalisée ou non). Tu peux changer d'avis à tout moment : Réglages → « Gérer mes choix de publicité ». AdMob peut utiliser l'identifiant publicitaire du téléphone et des informations techniques sur l'appareil. Règles de Google : <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></p>
+
+<h2>3. Ce que nous ne faisons pas</h2>
+<p>Pas de compte, pas d'inscription, pas de localisation, pas d'accès à tes contacts ni à tes fichiers. L'appli ne demande pas la permission « Appareil photo » : c'est l'appli photo de ton téléphone qui prend la photo.</p>
+
+<h2>4. Public</h2>
+<p>DecodeMe s'adresse aux adultes (18 ans et plus).</p>
+
+<h2>5. Supprimer tes données</h2>
+<p>Tout ce que l'appli garde est sur ton téléphone. Désinstaller l'appli efface tout. Le moteur se supprime aussi depuis Réglages → « Supprimer le moteur ».</p>
+
+<h2>6. Contact</h2>
+<p>Pour toute question : faciligo.academy@gmail.com</p>
+</body>
+</html>
